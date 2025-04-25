@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style/chat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.8.1/socket.io.min.js"
+        integrity="sha512-8BHxHDLsOHx+flIrQ0DrZcea7MkHqRU5GbTHmbdzMRnAaoCIkZ97PqZcXJkKZckMMhqfoeaJE+DNUVuyoQsO3Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.8.1/socket.io.js"></script>
+    <script>
+        // Função para rolar até o final
+    function scrollToBottom() {
+        const container = document.getElementById('messages-container');
+        container.scrollTop = container.scrollHeight;
+    }
+    
+    // Executar quando a página carregar
+    window.addEventListener('load', scrollToBottom);
+    
+    // Se estiver usando Socket.IO para atualizações em tempo real
+    document.addEventListener('DOMContentLoaded', function() {
+        let socket = io();
+        socket.on('atualizar_lista', function() {
+            // Pequeno delay para garantir que o DOM foi atualizado
+            setTimeout(scrollToBottom, 100);
+        });
+    });
+
+        let socket = io()
+        let alreadyReloaded = false;  // Controle para evitar múltiplos recarregamentos
+       
+        socket.on('atualizar_lista', () => {
+          
+            if (!alreadyReloaded) {
+                alreadyReloaded = true;
+                setTimeout(() => {
+                  
+                    location.reload();
+                }, 1000);  // Pequeno delay
+            }
+        });
+
+        // Resetar o controle após o carregamento
+        window.addEventListener('load', () => {
+            alreadyReloaded = false;
+        });
+    </script>
+
+    <title>Chat</title>
+</head>
+
+<body>
+
+    <div class="kitty">
+        <img src="/static/assets/Group 2 (1).png" alt="" width="400px">
+    </div>
+
+    <button class="sair">
+        <a href="/">Sair</a>
+    </button>
+
+    <div class="background">
+        <img src="../static/assets/imagem.png" alt="">
+    </div>
+
+    <div class="tudo">
+
+        <div class="campo">
+            <h2>Bem-vindo, {{ session['nome_usuario'] }}!</h2>
+            <div class="mensagens"  id="messages-container">
+                {% for msg in mensagens %}
+                <p>{{ msg[3]|default('') }} - {{ msg[1]|default('') }} enviou - {{ msg[2]|default('') }}</p>
+                {% endfor %}
+            </div>
+        </div>
+
+        <form action="/mensagem" method="post">
+            <input type="text" name="mensagem" placeholder="Digite sua mensagem">
+            <input type="hidden" name="usuario_id" value="{{ usuario_id }}">
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

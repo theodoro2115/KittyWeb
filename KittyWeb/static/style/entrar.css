@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Modak&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Annie+Use+Your+Telescope&family=Bebas+Neue&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Oleo+Script:wght@400;700&family=Sigmar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+:root{
+    --font-arimo: 'Arimo', sans-serif;
+    --font-: 'Modak', sans-serfif;
+    --font-chewy: 'Chewy', sans-serif; 
+    --cor-fundo: #ffe5ec;
+    --cor-fonte: #fb6f92;
+    --cor-botao: #ffb3c7;
+ 
+}
+
+body{
+    background-color: var(--cor-fundo);
+    
+}
+
+*{
+    margin: 0px;
+
+    padding: 0px;
+}
+
+form{
+    background: linear-gradient(to right,  rgba(255, 219, 237, 0.718) 50%, rgb(236, 59, 115, 1) 50%);
+    padding: 100px 500px;
+    box-shadow: 20px 30px 30px #ec3b73;
+    position: fixed;
+    margin-left: -350px;
+
+    position: fixed;
+    left: 40%;
+    top: 200px;
+    border-radius: 30px;
+
+    z-index: -1;
+}
+
+input{
+
+    background-color: var(--cor-botao);
+    border: var(--cor-botao);
+    font-family: var(--font-arimo);
+    color: #fb6f92;
+
+    padding: 20px 60px;
+    border-radius: 55px;
+
+    display: grid;
+    grid-template-columns: auto;
+    border: solid;
+    margin-bottom: 60px;
+
+    max-width: 600px;
+    margin-left: -380px;
+    margin-top: -30px;
+}
+
+input:hover{
+    border-color: #ec3b73;
+}
+
+.avatar{
+    padding: 18px 6px;
+    border-radius: 55px;
+}
+
+::placeholder{
+    color:white;
+}  
+
+h1{
+    font-family: var(--font-chewy);
+    color: white;
+    font-size: 35px;
+    position: fixed;
+    top: 260px;
+    left: 55%;
+}
+
+label{
+    background-color: #ffb3c7;
+
+}
+
+.botao_entrar {
+    background: var(--cor-fonte);
+    border-radius: 55px;
+    padding: 20px 30px;
+    border: solid;
+    border-color: white;
+    position: fixed;
+    margin-top: -30px;
+    margin-left: -350px;
+}
+
+.botao_entrar:hover{
+    background-color: var(--cor-botao);
+    transition: background-color 0.8s ease, transform 0.5s ease;
+}
+
+.botao_entrar a{
+    text-decoration: none;
+}
+
+.botao_voltar {
+    background: var(--cor-fonte);
+    border-radius: 55px;
+    padding: 20px 30px;
+    border: solid;
+    border-color: white;
+    position: fixed;
+    margin-top: -30px;
+    margin-left: -240px;
+}
+
+.botao_voltar:hover{
+    background-color: var(--cor-botao);
+    transition: background-color 0.8s ease, transform 0.5s ease;
+}
+
+.botao_voltar a{
+    text-decoration: none;
+    color: black;
+}
+
+.link a{
+    font-family: var(--font-arimo);
+    color: var(--cor-fonte);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.link{
+    margin-top: 60px;
+    margin-left: -350px;
+    position: fixed;
+
+}
+
+.link a:hover{
+    color: #ec3b73;
+}
+
+.link{
+    position: fixed;
+    margin-bottom: 40px;
+}
+
+.entrar{
+    position:fixed;
+    top: 50px;
+    left: 480px;
+    pointer-events: none;
+  
+}
+
+.laco{
+    position: fixed;
+    top: 225px;
+    margin-left: -400px;
+}
+
+
+.bem{
+    margin-left: 900px;
+    margin-top: 300px;
+
+    color: white;
+}
+
+.kitty{
+    position: fixed;
+    left: 45%;
+    top: 295px;
+}
+
+
+
+@media screen and (max-width: 1020px){
+    form{
+        padding: 110px 100px ;
+        box-shadow: 3px 3px 15px 5px rgba(142, 12, 53, 0.696);
+        margin-left: -50px;
+        left: 10%;
+        top: 90px;
+        border-radius: 4px;
+        z-index: -1;
+        margin: auto;
+        background-color:transparent;
+        background: transparent;
+
+        width: 30%;
+        height: 45%;
+    }
+
+    input{
+        padding: 10px 30px;
+        border-radius : 50px;
+
+        display: grid;
+        grid-template-columns: auto;
+        margin-bottom: 30px;
+
+        max-width: 160px;
+        margin: auto;
+        margin-left: -40%;
+        margin-top: 10%;
+
+        font-size: 20px;
+    } 
+
+    h1{
+      display: none;
+    }
+
+    .kitty  {
+      margin: auto;
+      margin-top: 42%;
+      position: fixed;
+    }
+
+    .kitty img{
+        width: 130%;
+        margin-left: -69%;
+    }
+
+    .link{
+        margin: auto;
+        left: 100px;
+        top: 430px;
+    }
+
+    .entrar{
+        margin: auto;
+        position: fixed;
+    }
+
+    .entrar img{
+        width: 250px;
+        margin-left: -170%;
+        margin-top:85px;
+    }
+
+    .botao_entrar{
+        margin: auto;
+        margin-top: 5%;
+        margin-left: -5%;
+        padding: 15px 15px;
+    }
+
+    .botao_voltar{
+        margin: auto;
+        padding: 15px 15px;
+        margin-top: 5%;
+        margin-left: 15%;
+    }
+}

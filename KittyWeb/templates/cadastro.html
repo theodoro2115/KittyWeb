@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>KittyWeb | Cadastro</title>
+        <link rel="stylesheet" href="/static/style/cadastro.css">
+    </head>
+    <body>
+        <div class="geral">
+            <h1></h1>
+            <div class="form">
+                <form action="/cadastro" method="post">
+                    <input type="text" name="nome_completo" id="nome_completo" placeholder="Nome Completo" required>
+                    <input type="text" name="nome_usuario" id="nome_usuario" placeholder="Nome de Usuário" required>
+                    <input type="text" name="senha" id="senha" placeholder="Senha"required>
+
+                    <div class="link">
+                        <a href="/login">Já tem uma conta? Faça login</a>
+                    </div>
+
+                    <label for="imagem" class="input-file-label"></label>
+
+                    <div class="botao">
+                        <button type="submit">Cadastrar</button>
+                    </div>
+
+                    <div class="imagem">
+                        <img src="../static/assets/Group 3.png" alt="imagem">
+                    </div>
+
+                    <div class="laco">
+                        <img src="../static/assets/laco.png" alt="laco">
+                    </div>
+                
+                </form>
+
+                <div class="kitty">
+                    <img src="../static/assets/helloentre.png" alt="">
+                 </div>
+            </div>
+
+            <h1> Seja Bem-vindo de volta!♡</h1>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
