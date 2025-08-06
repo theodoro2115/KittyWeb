@@ -1,6 +1,5 @@
 # 🐱 KittyWeb - Chat em Tempo Real
 
-[![Demo Video](https://img.shields.io/badge/Ver-Vídeo-blue?logo=youtube)](#demonstracao)
 
 Um aplicativo web de chat em tempo real com autenticação de usuários, desenvolvido com Flask, SQLite e Socket.IO. A ideia do **KittyWeb** é proporcionar uma experiência simples, rápida e direta de conversa via navegador, com foco em agilidade e praticidade.
 
@@ -8,12 +7,8 @@ Um aplicativo web de chat em tempo real com autenticação de usuários, desenvo
 
 ## 📽 Demonstração
 
-> 🔽 **Adicione aqui o link do vídeo (YouTube ou outra plataforma) ou um gif mostrando a aplicação funcionando**  
-> Exemplo:
-> [Clique para assistir o vídeo no YouTube](https://www.youtube.com/watch?v=SEU_VIDEO_ID)  
-> Ou adicione um gif abaixo:
->
-> ![Demonstração do KittyWeb](link_para_o_gif_ou_video_embed.gif)
+<video src="caminho/para/o/video.mp4" autoplay loop muted playsinline width="100%">
+</video>
 
 ---
 
