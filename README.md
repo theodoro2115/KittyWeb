@@ -6,6 +6,10 @@ Um aplicativo web de chat em tempo real com autenticação de usuários, desenvo
 ---
 
 ## 📽 Demonstração
+<p align="center">
+  <img src="video/kittyweb.gif" alt="Demonstração do KittyWeb" width="700"/>
+</p>
+
 
 <p align="center">
   <video src="video/kittyweb.mp4" autoplay muted playsinline width="100%">
