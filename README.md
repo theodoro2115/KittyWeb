@@ -7,7 +7,7 @@ Um aplicativo web de chat em tempo real com autenticação de usuários, desenvo
 
 ## 📽 Demonstração
 
-<video src="caminho/para/o/video.mp4" autoplay loop muted playsinline width="100%">
+<video src="[caminho/para/o/video.mp4](https://github.com/theodoro2115/KittyWeb/blob/main/KittyWeb/WhatsApp%20Video%202025-08-06%20at%2015.38.05.mp4)" autoplay loop muted playsinline width="100%">
 </video>
 
 ---
